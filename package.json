@@ -1,10 +1,10 @@
 {
-  "name": "The kitty project",
-  "description": "Kitty",
-  "author": "https://github.com/luketest1233",
+  "name": "kittyproject123",
+  "description": "the kitty project",
+  "author": "https://github.com/luketest1233/",
   "version": "3.2.1",
   "private": "false",
-  "homepage": "https://github.com/luketest1233/kittyproject123/",
+  "homepage": "https://github.com/luketest1233/kittyproject123",
   "dependencies": {
     "express": "^4.13.0",
     "gatling": "~1.2.0",
@@ -17,6 +17,6 @@
     "npm": ">=2.7.0"
   },
   "scripts": {
-    "start": "node ./node_modules/gatling/gatling.js ./app.js"
+    "start": ""
   }
 }
