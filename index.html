@@ -1,86 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Kitty Project</title>
-	<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
+    <title>Joey and Luke's Website</title>
+    <link rel="stylesheet" href="home-styles.css">
+    <style>
+        ul {
+  list-style-position: top;
+}
+
+ul {
+  list-style-position: inside;
+}
+ul {
+  list-style-position: outside;
+}
+    </style>
 </head>
 <body>
-<h1>The Kitty Project</h1>
-<ul>
-	<a href="index.html">Home</a>
-	<br>
-    <a href="luke.html">Luke's Pages</a>
-    <br>
-    <a href="joey.html">Joey's Pages</a>
-</ul>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" id="jsstyle"onclick="display_random_image();">Get a Random Picture of a Cat </button>
-
-<script>
-function display_random_image() 
-{
-     var theImages = [{
-        src: "https://live.staticflickr.com/1975/30486239537_593886f307_b.jpg",
-        width: "240",
-        height: "160"
-    }, {
-        src: "https://live.staticflickr.com/65535/49129860157_af3b89886f_b.jpg",
-        width: "320",
-        height: "195"
-    },
-    {
-        src: "https://live.staticflickr.com/65535/49129860157_af3b89886f_b.jpg",
-        width: "320",
-        height: "195"
-    }, {
-        src: "https://cdn.discordapp.com/attachments/773304781107363862/811012364739805204/image0.jpg",
-        width: "500",
-        height: "600"
-    }];
-    
-    var preBuffer = [];
-    for (var i = 0, j = theImages.length; i < j; i++) {
-        preBuffer[i] = new Image();
-        preBuffer[i].src = theImages[i].src;
-        preBuffer[i].width = theImages[i].width;
-        preBuffer[i].height = theImages[i].height;
-    }
-   
-// create random image number
-  function getRandomInt(min,max) 
-    {
-      //  return Math.floor(Math.random() * (max - min + 1)) + min;
-    
-imn = Math.floor(Math.random() * (max - min + 1)) + min;
-    return preBuffer[imn];
-    }  
-
-// 0 is first image,   preBuffer.length - 1) is  last image
-  
-var newImage = getRandomInt(0, preBuffer.length - 1);
- 
-// remove the previous images
-var images = document.getElementsByTagName('img');
-var l = images.length;
-for (var p = 0; p < l; p++) {
-    images[0].parentNode.removeChild(images[0]);
-}
-// display the image  
-document.body.appendChild(newImage);
-}
-</script>
-</body>
-</html>
+    <ul>
+        <a href="the-kitty-project.html">The Kitty Project  </a> 
+        
+        <a href="luke.html">Luke's Pages    </a>
+        
+        <a href="joey.html">Joey's Pages    </a>
+    </ul>
+<h1>Joey and Luke's Website</h1>
 <br>
-<p>Pictures taken from Creative Commons and taken by Joey.</p>
+<p>Hello, our names are Joey and Luke. My name is Luke, I am a beginner programmer. My name is Joey,and I have no idea what I'm doing but I like JoJo.</p>
 </body>
 </html>
